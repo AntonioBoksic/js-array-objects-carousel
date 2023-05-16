@@ -44,11 +44,34 @@
         images.forEach((element) =>
             {
                 const divElement = `<div class="item">
-                <img src="${element.image}" alt="">
+
+                    <div class="titleAndText">
+                    
+                    <h2>
+                    ${element.title}
+                    </h2>
+
+                    <h3>
+                    ${element.text}
+                    </h3>
+                    
+
+                    </div>
+                    
+                
+                    <img src="${element.image}" alt="">
                 </div>`;   
 
                 itemsContainer.innerHTML += divElement;
+                
+                // const titoloTestoElement = `<div class="titleText">
+                // <img src="${element.image}" alt="">
+                // </div>`;   
+
+                // itemsContainer.innerHTML += titoloTestoElement
+
             }
+
         )
 
         /*
